@@ -12,7 +12,7 @@ fn main() -> Result<(), eframe::Error> {
         "Timeline hello world",
         options,
         Box::new(|_cc| {
-            Box::<MyApp>::default()
+            Ok(Box::<MyApp>::default())
         }),
     )
 }
